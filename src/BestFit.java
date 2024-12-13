@@ -33,7 +33,7 @@ public class BestFit{
         }
 
         for (int i = 0; i < requests.length; i++) {
-            int bestIndex = -1; // Best block index
+            int bestIndex = -1;
 
 
             for (int j = 0; j < blocks.length; j++) {
@@ -46,7 +46,7 @@ public class BestFit{
 
             if (bestIndex != -1) {
                 allocation[i] = bestIndex;
-                blocks[bestIndex] -= requests[i]; // Reduce block size
+                blocks[bestIndex] -= requests[i];
             }
         }
 
